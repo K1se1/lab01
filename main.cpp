@@ -14,12 +14,13 @@ int factorial(int n)  {
 int main() {
     setlocale(LC_ALL, "Russian");
     // Первая программа(основная)
-    int n = 5;
+    int n;
+    std::cout << "Введите n: ";
+    std::cin >> n;
     int result = factorial(n); // Вызов функции factorial для вычисления факториала числа n
     std::cout << "Факториал числа " << n << " равен " << result << std::endl; // Вывод результата
     // Вторая программа(которая статическая библиотека)
     
-    setlocale(LC_ALL, "Russian");
 	float b ;
 	int a, base;
 	std::cout << "Введите целочисленное число: ";
